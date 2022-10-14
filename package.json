@@ -1,0 +1,19 @@
+{
+  "name": "com.henuo.video",
+  "displayName": "Video",
+  "version": "0.1.0",
+  "unity": "2021.3",
+  "description": "这是一个对VideoPlayer进行封装的视频播放器,主要包含视频播放器界面的操作",
+  "author": {
+    "name": "HeNuo",
+    "email": "HeNuo@heNuo.com",
+    "url": "https://github.com/HeNuoLibrary/"
+  },
+  "samples": [
+    {
+      "displayName": "Demo",
+      "description": "这是一个使用案例",
+      "path": "Samples/Video"
+    }
+  ]
+}
