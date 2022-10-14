@@ -3,26 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[ExecuteInEditMode]
-public class ToggleEditorSync : MonoBehaviour
+namespace HeNuo.Video
 {
-    public Image On;
-    public Image Off;
-    public Toggle toggle;
-
-    private void LateUpdate()
+    [ExecuteInEditMode]
+    public class ToggleEditorSync : MonoBehaviour
     {
-        if (On != null && Off != null && toggle != null)
+        public Image On;
+        public Image Off;
+        public Toggle toggle;
+
+        private void LateUpdate()
         {
-            if (toggle.isOn)
+            if (On != null && Off != null && toggle != null)
             {
-                if (On.enabled != true) On.enabled = true;
-                if (Off.enabled != false) Off.enabled = false;
-            }
-            else
-            {
-                if (On.enabled != false) On.enabled = false;
-                if (Off.enabled != true) Off.enabled = true;
+                if (toggle.isOn)
+                {
+                    if (On.enabled != true) On.enabled = true;
+                    if (Off.enabled != false) Off.enabled = false;
+                }
+                else
+                {
+                    if (On.enabled != false) On.enabled = false;
+                    if (Off.enabled != true) Off.enabled = true;
+                }
             }
         }
     }
